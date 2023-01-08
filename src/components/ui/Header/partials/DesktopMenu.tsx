@@ -7,13 +7,13 @@ type Props = {
 
 export const DesktopMenu = ({ items }: Props) => (
 	<>
-		<nav className={'flex items-center gap-8 text-custom-white'}>
+		<nav className={'hidden items-center gap-8 text-custom-white md:flex'}>
 			{items.map(({ path, label }) => (
 				<MenuItem key={label.toLowerCase().replace(' ', '-')} label={label} path={path} />
 			))}
 		</nav>
 
-		<section className={'flex items-center gap-12'}>
+		<section className={'hidden items-center gap-12 md:flex'}>
 			<Button variant={'transparent'}>Entrar</Button>
 			<Button variant={'red'}>Registre-se</Button>
 		</section>

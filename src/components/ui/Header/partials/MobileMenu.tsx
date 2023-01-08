@@ -17,7 +17,7 @@ export const MobileMenu = ({ items }: Props) => {
 	return (
 		<>
 			<Button
-				className={'inline-flex items-center gap-2'}
+				className={'inline-flex items-center gap-2 md:hidden'}
 				variant={'red'}
 				onClick={handleMobileMenu}
 			>
@@ -25,9 +25,9 @@ export const MobileMenu = ({ items }: Props) => {
 				<Bars3BottomRightIcon className={'h-6 w-6 text-custom-white'} />
 			</Button>
 			<div
-				className={`absolute ${
+				className={`absolute top-0 flex h-screen w-full flex-col gap-6 bg-custom-dark px-6 py-4 transition-all duration-500 md:hidden ${
 					isOpen ? 'right-0' : '-right-[100%]'
-				} top-0 flex h-screen w-full flex-col gap-6 bg-custom-dark px-6 py-4 transition-all duration-500`}
+				}`}
 			>
 				<div className={'flex items-center justify-between'}>
 					<Image alt={'PSG'} height={64} src={'/assets/media/psg.svg'} width={64} />

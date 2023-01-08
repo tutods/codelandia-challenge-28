@@ -4,8 +4,6 @@ import Image from 'next/image';
 import { DesktopMenu } from 'components/ui/Header/partials/DesktopMenu';
 import { MobileMenu } from 'components/ui/Header/partials/MobileMenu';
 import { useScrollEvent } from 'hooks/useScrollEvent';
-import { useWindowSize } from 'hooks/useWindowSize';
-import { isWidthSmall } from 'utils/isWidthSmall';
 
 const MENU_ITEMS = [
 	{
@@ -36,8 +34,6 @@ export const Header = () => {
 	useScrollEvent(() =>
 		setHeaderStyle(window && window.scrollY >= 20 ? 'bg-custom-dark/90' : 'bg-transparent')
 	);
-	const { width } = useWindowSize();
-	const isWidthSmallerThan768 = isWidthSmall(width, 768);
 
 	return (
 		<header
@@ -46,11 +42,8 @@ export const Header = () => {
 			<section className={'container mx-auto flex items-center justify-between gap-10'}>
 				<Image alt={'PSG'} height={64} src={'/assets/media/psg.svg'} width={64} />
 
-				{isWidthSmallerThan768 ? (
-					<MobileMenu items={MENU_ITEMS} />
-				) : (
-					<DesktopMenu items={MENU_ITEMS} />
-				)}
+				<DesktopMenu items={MENU_ITEMS} />
+				<MobileMenu items={MENU_ITEMS} />
 			</section>
 		</header>
 	);
