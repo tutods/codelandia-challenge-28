@@ -9,25 +9,25 @@ export const BlogSection = () => {
 				<BorderTitle>Últimas Notícias</BorderTitle>
 				<div className={'mb-16 mt-14 grid grid-cols-1 gap-5 md:grid-cols-3'}>
 					<PostCard
-						category={'Equipa Principal'}
+						category={'Club'}
 						date={new Date('2022-05-17')}
 						img={'/assets/media/image3.png'}
 						link={'#'}
-						title={'Messi deseja comprar 35% das ações de clube.'}
+						title={'Messi wants to buy 35% of club actions.'}
 					/>
 					<PostCard
-						category={'Equipa Principal'}
+						category={'Club'}
 						date={new Date('2022-05-15')}
 						img={'/assets/media/image5.png'}
 						link={'#'}
-						title={'Tudo sobre a vitória em Montpellier'}
+						title={'All about the vitory in Montpellier'}
 					/>
 					<PostCard
-						category={'Equipa Principal'}
+						category={'Club'}
 						date={new Date('2022-05-15')}
 						img={'/assets/media/image4.png'}
 						link={'#'}
-						title={'Mbappé no Liverpool?'}
+						title={'Mbappé on Liverpool?'}
 					/>
 				</div>
 

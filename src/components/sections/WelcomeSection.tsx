@@ -8,7 +8,7 @@ export const WelcomeSection = () => (
 		}
 	>
 		<div className={'container rounded bg-white p-10 shadow'}>
-			<BorderTitle>Bem vindo ao Parc Des Princes</BorderTitle>
+			<BorderTitle>Welcome to the Parc Des Princes</BorderTitle>
 			<p className={'mb-9 mt-6 text-custom-gray'}>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

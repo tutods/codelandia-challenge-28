@@ -8,23 +8,23 @@ import { useScrollEvent } from 'hooks/useScrollEvent';
 const MENU_ITEMS = [
 	{
 		path: '#',
-		label: 'Inicio'
+		label: 'Home'
 	},
 	{
 		path: '#',
-		label: 'Resultados'
+		label: 'Results'
 	},
 	{
 		path: '#',
-		label: 'Notícias'
+		label: 'News'
 	},
 	{
 		path: '#',
-		label: 'Clubes'
+		label: 'Clubs'
 	},
 	{
 		path: '#',
-		label: 'Lojas'
+		label: 'Store'
 	}
 ];
 

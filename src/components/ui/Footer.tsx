@@ -7,7 +7,7 @@ export const Footer = () => (
 		<section className={'container grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-4'}>
 			<div>
 				<h4 className={'mb-5 text-lg font-semibold uppercase md:mb-8 md:text-2xl'}>
-					Línguas
+					Languages
 				</h4>
 				<ul className={'flex flex-col gap-4'}>
 					<li className={'cursor-pointer'}>English</li>
@@ -20,7 +20,7 @@ export const Footer = () => (
 			</div>
 			<div>
 				<h4 className={'mb-5 text-lg font-semibold uppercase md:mb-8 md:text-2xl'}>
-					Redes Sociais
+					Social Network
 				</h4>
 				<ul className={'flex flex-col gap-4'}>
 					<li className={'cursor-pointer'}>Facebook</li>
@@ -29,11 +29,9 @@ export const Footer = () => (
 				</ul>
 			</div>
 			<div>
-				<h4 className={'mb-5 text-lg font-semibold uppercase md:mb-8 md:text-2xl'}>
-					Clube
-				</h4>
+				<h4 className={'mb-5 text-lg font-semibold uppercase md:mb-8 md:text-2xl'}>Club</h4>
 				<ul className={'flex flex-col gap-4'}>
-					<li className={'cursor-pointer'}>Patrocionadores</li>
+					<li className={'cursor-pointer'}>Sponsors</li>
 				</ul>
 			</div>
 		</section>
