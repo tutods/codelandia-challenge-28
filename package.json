@@ -1,0 +1,66 @@
+{
+  "name": "codelandia-challenge-28",
+  "version": "0.1.0",
+  "author": {
+    "name": "Daniel Sousa @TutoDS",
+    "url": "https://github.com/tutods"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "next dev",
+    "prebuild": "rimraf .next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "pre-commit": "lint-staged",
+    "format": "prettier --config prettier.config.cjs --write ."
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
+    "@next/font": "13.1.1",
+    "next": "13.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.3.0",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-airbnb-typescript-prettier": "^5.0.0",
+    "eslint-config-next": "13.1.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1r",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.2.4"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --config prettier.config.cjs --write",
+      "eslint --fix"
+    ],
+    "*.{md,html,js,jsx}": [
+      "prettier --write"
+    ]
+  }
+}
