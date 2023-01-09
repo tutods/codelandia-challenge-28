@@ -33,7 +33,7 @@ export const BlogSection = () => {
 
 				<div className={'flex items-center justify-center'}>
 					<Button className={'w-full md:w-fit'} variant={'red'}>
-						Carregar Mais
+						Load More
 					</Button>
 				</div>
 			</div>

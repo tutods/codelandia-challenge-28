@@ -17,7 +17,7 @@ export const HeroSection = () => (
 				</p>
 
 				<Button className={'mt-12 w-full md:max-w-fit'} variant={'red'}>
-					Ler Matéria
+					Read More
 				</Button>
 			</div>
 		</div>

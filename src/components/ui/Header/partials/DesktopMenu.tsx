@@ -14,8 +14,8 @@ export const DesktopMenu = ({ items }: Props) => (
 		</nav>
 
 		<section className={'hidden items-center gap-12 md:flex'}>
-			<Button variant={'transparent'}>Entrar</Button>
-			<Button variant={'red'}>Registre-se</Button>
+			<Button variant={'transparent'}>Login</Button>
+			<Button variant={'red'}>Sign Up</Button>
 		</section>
 	</>
 );

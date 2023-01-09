@@ -47,10 +47,10 @@ export const MobileMenu = ({ items }: Props) => {
 
 				<section className={'mt-12 flex flex-col items-center gap-4'}>
 					<Button className={'w-full'} variant={'transparent'}>
-						Entrar
+						Login
 					</Button>
 					<Button className={'w-full'} variant={'red'}>
-						Registre-se
+						Sign Up
 					</Button>
 				</section>
 			</div>

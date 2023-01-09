@@ -21,7 +21,7 @@ export const WelcomeSection = () => (
 				mollit anim id est laborum.&quot;
 			</p>
 
-			<Button variant={'transparent-red'}>Ler Mais</Button>
+			<Button variant={'transparent-red'}>Read More</Button>
 		</div>
 	</section>
 );
